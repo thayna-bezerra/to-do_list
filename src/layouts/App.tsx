@@ -1,7 +1,8 @@
-import { Button } from './components/Button';
-import { Header } from './components/Header';
-import { Input } from './components/Input';
+import { Button } from '../components/button';
+import { Header } from '../components/header';
+import { Input } from '../components/input';
 import './global.css';
+import { Tasks } from './Tasks';
 
 export function App(){
   return (
@@ -13,6 +14,7 @@ export function App(){
         />
         <Button>Criar</Button>
       </div>
+      <Tasks />
     </div>
   )
 }
