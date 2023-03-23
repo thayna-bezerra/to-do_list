@@ -1,0 +1,40 @@
+.task {
+  width: 46rem;
+  height: 4.5rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  margin: 12px auto;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+  padding-left: 16px;
+  align-items: center;
+  
+  border-radius: 8px;
+  border: 0.5px solid var(--gray-400);
+}
+
+.task p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -16px;
+}
+
+input[type=checkbox] {
+  margin-right: 30px;
+  appearance: none;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--blue);
+  outline: none;
+  max-width: 20px;
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
