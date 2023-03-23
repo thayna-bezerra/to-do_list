@@ -3,38 +3,73 @@
   height: 4.5rem;
   background: var(--gray-500);
   color: var(--gray-100);
-  margin: 12px auto;
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  
-  padding-left: 16px;
-  align-items: center;
-  
   border-radius: 8px;
   border: 0.5px solid var(--gray-400);
+  
+  margin: 12px auto;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.task p {
+.taskContent {
+  font-size: 14px;
+  width: 632px;
+  margin: auto;
+  line-height: 22px;
+}
+
+.task button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -16px;
+  width: 26px;
+  height: 26px;
+
+  background: transparent;
+  color: var(--gray-300);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.task button:hover {
+  color: var(--red-danger);
+  background: var(--gray-400);
 }
 
 input[type=checkbox] {
-  margin-right: 30px;
   appearance: none;
   border-radius: 50%;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   border: 2px solid var(--blue);
   outline: none;
-  max-width: 20px;
 }
 
 input[type=checkbox]:checked {
   background-color: var(--purple-dark);
   border-color: var(--purple-dark);
+}
+
+input[type=checkbox]:checked::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url(../../assets/check.svg);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.isChecked {
+  color: var(--gray-300);
+  text-decoration: line-through;
+  border: none;
 }
