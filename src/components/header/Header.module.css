@@ -1,11 +1,59 @@
 .header{
   background: var(--gray-700);
   display: flex;
+  align-items: center;
   justify-content: center;
-  height: 200px;
-  padding: 4.5rem 0;
+  height: 12.5rem;
+  position: relative;
 }
 
 .header img {
   height: 3rem;
+}
+
+.container {
+  position: absolute;
+  height: 3.375rem;
+  bottom: calc(-3.375rem / 2);
+  width: 100%;
+  max-width: 47.8rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.input{
+  display: block;
+  width: 39.875rem;
+  height: 3.375rem;
+  margin-right: 8px;
+  padding-left: 18px;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-style: none;
+  border-radius: 8px;
+  align-items: flex-end;
+}
+
+.button {
+  width: 5.625rem;
+  height: 3.375rem;
+
+  border-style: none;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--blue);
 }

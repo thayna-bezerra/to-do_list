@@ -73,3 +73,57 @@ input[type=checkbox]:checked::before {
   text-decoration: line-through;
   border: none;
 }
+
+.info{
+  width: 46rem;
+  margin: 70px auto 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.125rem 0.5rem;
+  
+  border-radius: 9999px;
+  background: var(--gray-400);
+  color: var(--gray-100);
+
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  margin-left: 8px;
+}
+
+.info p{
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.info p+p{
+  color: var(--purple)
+}
+
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 18px;
+
+  text-align: center;
+  line-height: 22px;
+}
+
+.emptyList hr {
+  width: 736px;
+  height: 0.5px;
+  border: none;
+  margin-bottom: 40px;
+  background-color: var(--gray-400);
+}
