@@ -4,9 +4,12 @@ import styles from './Task.module.css'
 
 interface Props {
   task: TaskProps;
+  onDelete: (taskId: string) => void;
 }
 
-export function Task({ task }: Props) {
+export function Task({ task, onDelete }: Props) {
+  const isCompleted = true;
+  
   return (
     /*<div className={styles.emptyList}>
       <hr/>
@@ -21,7 +24,7 @@ export function Task({ task }: Props) {
         <p>{task.title}</p>
       </div>
 
-      <button>
+      <button onClick={() => onDelete(task.id)}>
         <Trash size={18} />
       </button>
     </div>

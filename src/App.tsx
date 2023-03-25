@@ -25,10 +25,31 @@ export function App() {
     }
   ]);
 
+  function addingTask(taskTitle: string){
+    setTasks([
+      ...tasks,
+      {
+        id: crypto.randomUUID(),
+        title: taskTitle,
+        isCompleted: false,
+      }
+    ]);
+  }
+
+  function deleteTaskById(taskId: string) {
+    const newTasks = tasks.filter((task) => task.id !== taskId)
+    setTasks(newTasks);
+  }
+
   return (
     <div>
-      <Header />
-      <Tasks tasks={tasks}/>
+      <Header 
+        onAddTask={addingTask} 
+      />
+      <Tasks 
+        tasks={tasks}
+        onDelete={deleteTaskById}
+      />
     </div>
   )
 }
