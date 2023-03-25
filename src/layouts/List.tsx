@@ -1,8 +1,12 @@
 import styles from './List.module.css'
 import { Notepad } from 'phosphor-react'
 import { Task } from '../components/task'
+import { useState } from 'react'
 
 export function List(){
+  const [tasks, setTasks] = useState([])
+  const [newTaskText, setNewTaskText] = useState('')
+
   return (
     <div>
       <div className={styles.info}>
@@ -15,8 +19,6 @@ export function List(){
         <p><strong>Você ainda não tem tarefas cadastradas</strong> <br /> Crie tarefas e organize seus itens a fazer</p>
   </div>*/}
       <div className={styles.listTasks}>
-        <Task/>
-        <Task/>
         <Task/>
         <Task/>
       </div>
