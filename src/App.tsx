@@ -16,11 +16,6 @@ export function App() {
     {
       id: "T1",
       title: "teste",
-      isCompleted: true,
-    },
-    {
-      id: "T2",
-      title: "teste2",
       isCompleted: false,
     }
   ]);
