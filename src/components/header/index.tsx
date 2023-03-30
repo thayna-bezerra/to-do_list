@@ -1,7 +1,7 @@
-import { PlusCircle } from 'phosphor-react';
-import styles from './Header.module.css'
-import logo from '../../assets/to-do.svg'
 import { ChangeEvent, FormEvent, useState } from 'react';
+import { PlusCircle } from 'phosphor-react';
+import logo from '../../assets/to-do.svg'
+import styles from './Header.module.css'
 
 interface Props {
   onAddTask: (taskTitle: string) => void;
@@ -32,7 +32,7 @@ export function Header({ onAddTask }: Props) {
           value={title} 
         />
         <button className={styles.button}>
-          Criar
+          <div>Criar</div>
           <PlusCircle size={20} weight="bold" />
         </button>
       </form>

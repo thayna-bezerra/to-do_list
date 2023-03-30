@@ -1,6 +1,5 @@
-import { Notepad, Trash } from 'phosphor-react'
+import { Trash } from 'phosphor-react'
 import { TaskProps } from '../../App'
-import { Tasks } from '../tasks';
 import styles from './Task.module.css'
 
 interface Props {

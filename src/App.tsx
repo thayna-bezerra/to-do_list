@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Header } from './components/header';
-import { Task } from './components/task';
 import { Tasks } from './components/tasks';
 
 import './global.css';
